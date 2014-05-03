@@ -1,4 +1,4 @@
 zetta-stats
 ===========
 
-StatsD Interface
+Utilities for interfacing with StatsD

@@ -1,0 +1,40 @@
+{
+  "name": "zetta-stats",
+  "description": "Utilities for interfacing with StatsD",
+  "version": "0.0.1",
+  "author": {
+    "name": "ASPECTRON Inc.",
+    "email": "anton.yemelyanov@gmail.com"
+  },
+  "dependencies": {
+    "node-statsd": "*"
+  },
+  "keywords": [
+    "utilities",
+    "framework",
+    "stats",
+    "profile",
+    "statsd",
+    "measure"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aspectron/zetta-stats"
+  },
+  "main": "zetta-stats",
+  "files": [
+    "zetta-stats.js"
+  ],
+  "scripts": {
+    "prepublish": "npm prune"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/aspectron/zetta-stats/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/aspectron/zetta-stats"
+}
