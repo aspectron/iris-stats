@@ -349,13 +349,13 @@ function Monitor(statsd, _options) {
 
     function startNetworkStatsUpdates() {
         if(process.platform != 'linux')
-            return console.log("network stats updates are not running as they are supported under linux only.");
+            return console.log("zetta-stats: network stats updates are not running as they are supported under linux only.");
         dpc(updateNetworkStats);
     }
 
     function startStorageStatsUpdates() {
         if(process.platform != 'linux')
-            return console.log("storage stats updates are not running as they are supported under linux only.");
+            return console.log("zetta-stats: storage stats updates are not running as they are supported under linux only.");
         dpc(updateStorageStats);
     }
 
