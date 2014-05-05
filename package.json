@@ -1,10 +1,10 @@
 {
   "name": "zetta-stats",
-  "description": "Utilities for interfacing with StatsD",
-  "version": "0.0.2",
+  "description": "Zetta Toolkit - Utilities for interfacing with StatsD",
+  "version": "0.0.3",
   "author": {
     "name": "ASPECTRON Inc.",
-    "email": "anton.yemelyanov@gmail.com"
+    "email": "info@aspectron.com"
   },
   "dependencies": {
     "node-statsd": "*",
