@@ -37,13 +37,15 @@ function StatsD(address, node_id, designation) {
     console.log("Connecting to StatsD at",address.bold);
     self.statsd = new _StatsD({ host: address });
 
+    self.designation = designation.toUpperCase();
+
     self.gauge = function (name, value) {
         // console.log(address+': '+(designation+'.'+node_id+'.'+name).green.bold,' -> ',value.toString().bold);
-        return self.statsd.gauge(designation + '.' + node_id + '.' + name, value);
+        return self.statsd.gauge(self.designation + '.' + node_id + '.' + name, value);
     }
 
     self.timing = function (name, value) {
-        return self.statsd.timing(designation+'.'+node_id+ '.' + name, value);
+        return self.statsd.timing(self.designation+'.'+node_id+ '.' + name, value);
     }
 }
 
@@ -146,10 +148,11 @@ function Monitor(statsd, _options) {
         }
 
         statsd.gauge('memory.free', self.stats.memory.free);
+        statsd.gauge('memory.used', self.stats.memory.total - self.stats.memory.free);
         statsd.gauge('memory.total', self.stats.memory.total);
-        statsd.gauge('loadAvg.5s', self.stats.loadAvg[0]);
-        statsd.gauge('loadAvg.10s', self.stats.loadAvg[1]);
-        statsd.gauge('loadAvg.15s', self.stats.loadAvg[2]);
+        statsd.gauge('loadAvg.5m', self.stats.loadAvg[0]);
+        statsd.gauge('loadAvg.10m', self.stats.loadAvg[1]);
+        statsd.gauge('loadAvg.15m', self.stats.loadAvg[2]);
 
         dpc(10000, updateSystemStats)
     }
@@ -370,11 +373,8 @@ function Monitor(statsd, _options) {
 
 }
 
-
 module.exports = {
     StatsD : StatsD,
     Profiler : Profiler,
     Monitor : Monitor
 }
-
-
