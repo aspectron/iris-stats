@@ -340,7 +340,7 @@ function Monitor(statsd, _options) {
                 statsd.gauge('storage.'+dev+'.bytesFree', o.bytesFree);
             })
 
-            dpc(self.storageStatsFreq, updateStoragekStats);
+            dpc(self.storageStatsFreq, updateStorageStats);
         })
     }
 
