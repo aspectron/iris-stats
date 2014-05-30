@@ -226,7 +226,7 @@ function Monitor(statsd, _options) {
     }
 
     function ifconfigDelta(tdelta, A, B) {
-        var ifaces = [ ]
+        var ifaces = { }
         _.each(A, function(iface, name) {
             ifaces[name] = { }
             _.each(iface, function(info, dest) {
