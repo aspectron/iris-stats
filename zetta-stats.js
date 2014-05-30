@@ -362,13 +362,13 @@ function Monitor(statsd, _options) {
         dpc(updateStorageStats);
     }
 
-    if(self.options.system !== false)
+    if(self.options.system)
         startSystemStatsUpdates();
 
-    if(self.options.network !== false)
+    if(self.options.network)
         startNetworkStatsUpdates();
 
-    if(self.options.storage !== false)
+    if(self.options.storage)
         startStorageStatsUpdates();
 
 }
