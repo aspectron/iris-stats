@@ -1,6 +1,6 @@
 {
-  "name": "zetta-stats",
-  "description": "Zetta Toolkit - Utilities for interfacing with StatsD & Graphite",
+  "name": "iris-stats",
+  "description": "IRIS Toolkit - Utilities for interfacing with StatsD & Graphite",
   "version": "0.0.10",
   "author": {
     "name": "ASPECTRON Inc.",
@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/aspectron/zetta-stats"
+    "url": "git://github.com/aspectron/iris-stats"
   },
-  "main": "zetta-stats",
+  "main": "iris-stats",
   "files": [
-    "zetta-stats.js"
+    "iris-stats.js"
   ],
   "scripts": {
     "prepublish": "npm prune"
@@ -34,8 +34,8 @@
   },
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/aspectron/zetta-stats/issues"
+    "url": "https://github.com/aspectron/iris-stats/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/aspectron/zetta-stats"
+  "homepage": "https://github.com/aspectron/iris-stats"
 }
