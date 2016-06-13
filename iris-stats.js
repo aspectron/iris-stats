@@ -24,8 +24,8 @@
 //
 
 var StatsD = require("./lib/statsd");
-StatsD.Profiler = require("./lib/profiler");
-StatsD.Monitor =  require("./lib/monitor");
+StatsD.Profiler = require("./lib/statsd-profiler");
+StatsD.Monitor =  require("./lib/statsd-host-monitor");
 
 module.exports = {
     StatsD : require("./lib/statsd"),
