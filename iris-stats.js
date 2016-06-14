@@ -29,6 +29,7 @@ StatsD.Monitor =  require("./lib/statsd-host-monitor");
 
 module.exports = {
     StatsD : require("./lib/statsd"),
+    Stats: require("./lib/stats"),
     monitors : {
         System : require("./lib/monitors/system"),
         Storage : require("./lib/monitors/storage"),
