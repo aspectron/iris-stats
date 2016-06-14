@@ -1,14 +1,15 @@
 {
   "name": "iris-stats",
   "description": "IRIS Toolkit - Utilities for interfacing with StatsD & Graphite",
-  "version": "0.0.10",
+  "version": "0.0.15",
   "author": {
     "name": "ASPECTRON Inc.",
     "email": "info@aspectron.com"
   },
   "dependencies": {
     "node-statsd": "*",
-    "iris-underscore": "*"
+    "iris-underscore": "*",
+    "underscore" : "*"
   },
   "keywords": [
     "utilities",
@@ -24,7 +25,9 @@
   },
   "main": "iris-stats",
   "files": [
-    "iris-stats.js"
+    "iris-stats.js",
+    "lib",
+    "README.md"
   ],
   "scripts": {
     "prepublish": "npm prune"
