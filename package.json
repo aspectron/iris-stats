@@ -1,7 +1,7 @@
 {
   "name": "iris-stats",
   "description": "IRIS Toolkit - Utilities for interfacing with StatsD & Graphite",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "author": {
     "name": "ASPECTRON Inc.",
     "email": "info@aspectron.com"
