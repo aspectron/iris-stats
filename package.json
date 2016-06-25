@@ -1,7 +1,7 @@
 {
   "name": "iris-stats",
-  "description": "IRIS Toolkit - Utilities for interfacing with StatsD & Graphite",
-  "version": "0.0.16",
+  "description": "IRIS - Stats collection utilities",
+  "version": "0.0.17",
   "author": {
     "name": "ASPECTRON Inc.",
     "email": "info@aspectron.com"
@@ -17,6 +17,7 @@
     "stats",
     "profile",
     "statsd",
+    "graphite",
     "measure"
   ],
   "repository": {

@@ -1,4 +1,4 @@
 iris-stats
 ===========
 
-Utilities for interfacing with StatsD
+Utilities for collection of stats, retrieval of graph information as well as interfacing with StatsD and Graphite.
