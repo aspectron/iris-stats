@@ -1,7 +1,7 @@
 {
   "name": "iris-stats",
   "description": "IRIS - Stats collection utilities",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "author": {
     "name": "ASPECTRON Inc.",
     "email": "info@aspectron.com"
